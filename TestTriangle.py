@@ -54,7 +54,7 @@ class TestTriangles(unittest.TestCase):
         self.assertNotEqual(classifyTriangle(3, 3, 0), 'Isosceles', 'Edge 0 is invalid input.')
 
     def testMScaleneTriangle(self):
-        self.assertEqual(classifyTriangle(3, 4, 5), 'Scalene', '3,4,5 is a Scalene triangle though Right')
+        self.assertEqual(classifyTriangle(3, 4, 6), 'Scalene', '3,4,6 should be scalene')
 
     def testNScaleneTriangle(self):
         self.assertNotEqual(classifyTriangle(4, 5, 4), 'Scalene', '4,5,4 should be isosceles')
